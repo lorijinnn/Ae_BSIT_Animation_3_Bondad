@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aèzy Floral - Dashboard</title>
+    <link rel="stylesheet" href="file-p51.css">
+</head>
+<body>
+    <header>
+        <h1>Aèzy Floral Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#order-page">Order Page</a></li>
+                <li><a href="#order-tracking">Order Tracking</a></li>
+                <li><a href="#item-management">Item Management</a></li>
+                <li><a href="#report-dashboard">Report Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="order-page">
+            <h2>Order Page</h2>
+            <form>
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required>
+
+                <label for="flower-type">Flower Type:</label>
+                <select id="flower-type" name="flower-type" required>
+                    <option value="roses">Roses</option>
+                    <option value="tulips">Tulips</option>
+                    <option value="sunflowers">Sunflowers</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <section id="order-tracking">
+            <h2>Order Tracking</h2>
+            <form>
+                <label for="order-id">Order ID:</label>
+                <input type="text" id="order-id" name="order-id" required>
+                <button type="submit">Track Order</button>
+            </form>
+            <div class="tracking-info">
+                <!-- Tracking information will be displayed here -->
+            </div>
+        </section>
+
+        <section id="item-management">
+            <h2>Item Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Red Roses</td>
+                        <td>₱3,899.00</td>
+                        <td>50</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Sunflowers</td>
+                        <td>₱5,999.00</td>
+                        <td>30</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="report-dashboard">
+            <h2>Report Dashboard</h2>
+            <div class="report">
+                <h3>Sales Report</h3>
+                <p>Total Sales: ₱50,000.00</p>
+                <p>Orders Completed: 200</p>
+            </div>
+            <div class="report">
+                <h3>Inventory Report</h3>
+                <p>Total Items in Stock: 300</p>
+                <p>Low Stock Items: 5</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aèzy Floral. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Login Page Styles */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9ebe3; /* Matches your background color */
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #944e5c; /* Matches header color from your theme */
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .login-form input:focus {
+    border-color: #944e5c;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #944e5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #7d3a49;
+  }
+  
+  .login-form .signup-btn {
+    background-color: transparent;
+    color: #944e5c;
+    border: 2px solid #944e5c;
+    margin-top: 10px;
+  }
+  
+  .login-form .signup-btn:hover {
+    background-color: #944e5c;
+    color: white;
+  }
+  
+  .login-form .exit-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #944e5c;
+    font-size: 16px;
+  }
+  
+  .login-form .exit-btn:hover {
+    color: #7d3a49;
+  }
+  
